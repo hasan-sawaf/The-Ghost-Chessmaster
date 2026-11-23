@@ -1,0 +1,181 @@
+name: ghostchessmaster
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.0
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.8
+  firebase_core: ^4.12.1
+  firebase_database: ^12.4.6
+  cloud_firestore: ^6.7.1
+  firebase_auth: ^6.5.6
+  provider: ^6.1.5+1
+  shared_preferences: ^2.5.3
+  intl: ^0.20.2
+  flutter_bloc: ^9.1.1
+  equatable: ^2.1.0
+  get_it: ^9.2.1
+  stockfish_flutter_plus: ^1.0.1
+  mobile_scanner: ^6.0.4
+  audioplayers: ^6.1.0
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo.png"
+  adaptive_icon_background: "#16161A"
+  adaptive_icon_foreground: "assets/logo.png"
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/sound effect/
+    - assets/logo.png
+    - assets/icons/1024x/
+    - assets/icons/islands/
+    - assets/Pieces/3d_chesskid/white_pieces/
+    - assets/Pieces/3d_chesskid/black_pieces/
+    - assets/Pieces/3d_plastic/white_pieces/
+    - assets/Pieces/3d_plastic/black_pieces/
+    - assets/Pieces/3d_staunton/white_pieces/
+    - assets/Pieces/3d_staunton/black_pieces/
+    - assets/Pieces/3d_wood/white_pieces/
+    - assets/Pieces/3d_wood/black_pieces/
+    - assets/Pieces/8_bit/white_pieces/
+    - assets/Pieces/8_bit/black_pieces/
+    - assets/Pieces/Standered/white_pieces/
+    - assets/Pieces/Standered/black_pieces/
+    - assets/Pieces/alpha/white_pieces/
+    - assets/Pieces/alpha/black_pieces/
+    - assets/Pieces/bases/white_pieces/
+    - assets/Pieces/bases/black_pieces/
+    - assets/Pieces/book/white_pieces/
+    - assets/Pieces/book/black_pieces/
+    - assets/Pieces/bubblegum/white_pieces/
+    - assets/Pieces/bubblegum/black_pieces/
+    - assets/Pieces/cases/white_pieces/
+    - assets/Pieces/cases/black_pieces/
+    - assets/Pieces/classic/white_pieces/
+    - assets/Pieces/classic/black_pieces/
+    - assets/Pieces/club/white_pieces/
+    - assets/Pieces/club/black_pieces/
+    - assets/Pieces/condal/white_pieces/
+    - assets/Pieces/condal/black_pieces/
+    - assets/Pieces/dash/white_pieces/
+    - assets/Pieces/dash/black_pieces/
+    - assets/Pieces/game_room/white_pieces/
+    - assets/Pieces/game_room/black_pieces/
+    - assets/Pieces/glass/white_pieces/
+    - assets/Pieces/glass/black_pieces/
+    - assets/Pieces/gothic/white_pieces/
+    - assets/Pieces/gothic/black_pieces/
+    - assets/Pieces/graffiti/white_pieces/
+    - assets/Pieces/graffiti/black_pieces/
+    - assets/Pieces/icy_sea/white_pieces/
+    - assets/Pieces/icy_sea/black_pieces/
+    - assets/Pieces/light/white_pieces/
+    - assets/Pieces/light/black_pieces/
+    - assets/Pieces/lolz/white_pieces/
+    - assets/Pieces/lolz/black_pieces/
+    - assets/Pieces/marble/white_pieces/
+    - assets/Pieces/marble/black_pieces/
+    - assets/Pieces/maya/white_pieces/
+    - assets/Pieces/maya/black_pieces/
+    - assets/Pieces/metal/white_pieces/
+    - assets/Pieces/metal/black_pieces/
+    - assets/Pieces/modern/white_pieces/
+    - assets/Pieces/modern/black_pieces/
+    - assets/Pieces/nature/white_pieces/
+    - assets/Pieces/nature/black_pieces/
+    - assets/Pieces/neo/white_pieces/
+    - assets/Pieces/neo/black_pieces/
+    - assets/Pieces/neo_wood/white_pieces/
+    - assets/Pieces/neo_wood/black_pieces/
+    - assets/Pieces/neon/white_pieces/
+    - assets/Pieces/neon/black_pieces/
+    - assets/Pieces/newspaper/white_pieces/
+    - assets/Pieces/newspaper/black_pieces/
+    - assets/Pieces/ocean/white_pieces/
+    - assets/Pieces/ocean/black_pieces/
+    - assets/Pieces/sky/white_pieces/
+    - assets/Pieces/sky/black_pieces/
+    - assets/Pieces/space/white_pieces/
+    - assets/Pieces/space/black_pieces/
+    - assets/Pieces/tigers/white_pieces/
+    - assets/Pieces/tigers/black_pieces/
+    - assets/Pieces/tournament/white_pieces/
+    - assets/Pieces/tournament/black_pieces/
+    - assets/Pieces/vintage/white_pieces/
+    - assets/Pieces/vintage/black_pieces/
+    - assets/Pieces/wood/white_pieces/
+    - assets/Pieces/wood/black_pieces/
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/to/asset-from-package
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/to/font-from-package

@@ -1,0 +1,29 @@
+# Default auto-normalization for text files
+* text=auto
+
+# Scripts
+*.bat text eol=crlf
+*.sh text eol=lf
+
+# Source files
+*.py text eol=lf
+*.dart text eol=lf
+*.ino text eol=lf
+*.h text eol=lf
+*.cpp text eol=lf
+*.json text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.md text eol=lf
+
+# Binary assets
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.mp3 binary
+*.exe binary
+*.jar binary
+*.pdf binary
+*.docx binary
+*.pptx binary

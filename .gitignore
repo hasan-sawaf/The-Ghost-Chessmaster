@@ -1,0 +1,61 @@
+# ==============================================================================
+# Python
+# ==============================================================================
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# PyInstaller & Desktop Build Outputs
+build/
+dist/
+*.spec
+ChessTracker/
+Chess Tracker App/
+
+# Runtime Logs
+logs/
+*.log
+
+# ==============================================================================
+# Flutter / Dart / Mobile Build Artifacts
+# ==============================================================================
+**/.dart_tool/
+**/.packages
+**/.pub-cache/
+**/.pub/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/build/
+**/.gradle/
+**/.cxx/
+**/local.properties
+**/GeneratedPluginRegistrant.*
+**/Flutter/ephemeral/
+**/Flutter/Generated.xcconfig
+**/Flutter/flutter_export_environment.sh
+**/flutter/ephemeral/
+
+# Android Signing Keys (Never commit keystores)
+**/*.keystore
+**/*.jks
+**/key.properties
+
+# ==============================================================================
+# IDEs & OS
+# ==============================================================================
+.vscode/
+.idea/
+*.iml
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini

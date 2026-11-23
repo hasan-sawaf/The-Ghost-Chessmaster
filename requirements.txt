@@ -1,0 +1,8 @@
+opencv-python>=4.8.0
+numpy>=1.26.0
+python-chess>=1.999
+pyserial>=3.5
+pillow>=10.0.0
+firebase-admin>=6.5.0
+qrcode>=7.4.2
+psutil>=5.9.0

@@ -1,0 +1,6 @@
+{
+  "_comment": "CONFIGURATION INSTRUCTION: Set rtdb_url to your Firebase Realtime Database URL including the board node identifier.",
+  "board_id": "BOARD_8AA5C5",
+  "board_name": "BoardOne",
+  "rtdb_url": "https://YOUR_FIREBASE_PROJECT_ID-default-rtdb.firebaseio.com/BOARD_8AA5C5"
+}
